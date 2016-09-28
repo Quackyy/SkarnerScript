@@ -17,7 +17,7 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
   OlafMenu.Combo:Boolean("useHydra", "Use Ravenous Hydra", true)
   OlafMenu.Combo:Boolean("useTitanic", "Use Titanic Hydra", true)
 -- Harass Menu
-  SkarnerMenu:Menu("Harass", "Harass")
+  --SoonTM
 --Q
   SkarnerMenu.Combo:Boolean("useQ", "Use Q", true)   
   SkarnerMenu.Harass:Slider("manaQ","Mana-Manager | Q", 60, 0, 100, 1)
@@ -28,11 +28,7 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
   SkarnerMenu.Combo:Boolean("useE", "Use E", true)
   SkarnerMenu.Harass:Slider("manaE","Mana-Manager | E", 20, 0, 100, 1) 
 -- KillSteal Menu
-  SkarnerMenu:Menu("KillSteal", "KillSteal")
-  SkarnerMenu.KillSteal:Boolean("useE", "Use E", true)
-
-
-
+  --SoonTM
 
 OnTick(function()
 
@@ -44,8 +40,8 @@ OnTick(function()
                         
             local ePred = GetPrediction(target,SkarnerE)
                          
-            if qPred and qPred.hitChance >= 0.25 then 
-                CastSkillShot(_E,qPred.castPos)
+            if ePred and ePred.hitChance >= 0.25 then 
+                CastSkillShot(_E,ePred.castPos)
             end
         end
        
