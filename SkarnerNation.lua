@@ -49,15 +49,15 @@ OnTick(function()
             end
         end
        
-        if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_W) == READY and OlafMenu.Combo.useW:Value() then
+        if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_W) == READY and SkarnerMenu.Combo.useW:Value() then
           CastSpell(_W) 
         end
         
-        if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_Q) == READY and OlafMenu.Combo.useE:Value() then
+        if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_Q) == READY and SkarnerMenu.Combo.useE:Value() then
           CastSpell(_Q)
         end
         
-        if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_R) == READY and OlafMenu.Combo.useR:Value() then
+        if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_R) == READY and SkarnerMenu.Combo.useR:Value() then
           CastSpell(_R)
         end
 
