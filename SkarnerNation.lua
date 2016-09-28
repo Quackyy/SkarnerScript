@@ -19,7 +19,7 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
 -- Harass Menu
   SkarnerMenu:Menu("Harass", "Harass")
 --Q
-  SkarnerMenu.Combo:Boolean("useR", "Use Q", true)   
+  SkarnerMenu.Combo:Boolean("useQ", "Use Q", true)   
   SkarnerMenu.Harass:Slider("manaQ","Mana-Manager | Q", 60, 0, 100, 1)
 --W
   SkarnerMenu.Combo:Boolean("useW", "Use W", true) 
@@ -58,7 +58,7 @@ OnTick(function()
         end
         
         if ValidTarget(target,GetRange(myHero) + GetHitBox(target)) and CanUseSpell(myHero,_R) == READY and SkarnerMenu.Combo.useR:Value() then
-          CastSpell(_R)
+          CastTargetSpell(target,_R)
         end
 
          if GetItemSlot(myHero, 3077) > 0 and IsReady(GetItemSlot(myHero, 3077)) and SkarnerMenu.Combo.useTiamat:Value() then
