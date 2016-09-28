@@ -19,14 +19,11 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
 -- Harass Menu
   --SoonTM
 --Q
-  SkarnerMenu.Combo:Boolean("useQ", "Use Q", true)   
-  SkarnerMenu.Harass:Slider("manaQ","Mana-Manager | Q", 60, 0, 100, 1)
+    
 --W
-  SkarnerMenu.Combo:Boolean("useW", "Use W", true) 
-  SkarnerMenu.Harass:Slider("manaW","Mana-Manager | W", 40, 0, 100, 1)
+  
 --E
-  SkarnerMenu.Combo:Boolean("useE", "Use E", true)
-  SkarnerMenu.Harass:Slider("manaE","Mana-Manager | E", 20, 0, 100, 1) 
+  
 -- KillSteal Menu
   --SoonTM
 
