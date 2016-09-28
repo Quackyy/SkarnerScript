@@ -13,9 +13,9 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
   SkarnerMenu.Combo:Boolean("useW", "Use W", true)
   SkarnerMenu.Combo:Boolean("useE", "Use E", true)
   SkarnerMenu.Combo:Boolean("useR", "Use R", true)
-  OlafMenu.Combo:Boolean("useTiamat", "Use Tiamat", true)
-  OlafMenu.Combo:Boolean("useHydra", "Use Ravenous Hydra", true)
-  OlafMenu.Combo:Boolean("useTitanic", "Use Titanic Hydra", true)
+  SkarnerMenu.Combo:Boolean("useTiamat", "Use Tiamat", true)
+  SkarnerMenu.Combo:Boolean("useHydra", "Use Ravenous Hydra", true)
+  SkarnerMenu.Combo:Boolean("useTitanic", "Use Titanic Hydra", true)
 -- Harass Menu
   --SoonTM
 --Q
