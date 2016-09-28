@@ -42,7 +42,7 @@ OnTick(function()
          
         if ValidTarget(target,SkarnerE.range) and CanUseSpell(myHero,_E) == READY and SkarnerMenu.Combo.useE:Value() then
                         
-            local qPred = GetPrediction(target,SkarnerE)
+            local ePred = GetPrediction(target,SkarnerE)
                          
             if qPred and qPred.hitChance >= 0.25 then 
                 CastSkillShot(_E,qPred.castPos)
