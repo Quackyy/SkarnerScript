@@ -7,7 +7,7 @@ print("SkarnerNation // By:Vikk")
 local SkarnerE = {delay = 0.25, speed = 1500, width = 70, range = 1000} 
 
 local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
---Combo Menu
+
   SkarnerMenu:Menu("Combo", "Combo")
   SkarnerMenu.Combo:Boolean("useQ", "Use Q", true)
   SkarnerMenu.Combo:Boolean("useW", "Use W", true)
@@ -16,16 +16,6 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
   SkarnerMenu.Combo:Boolean("useTiamat", "Use Tiamat", true)
   SkarnerMenu.Combo:Boolean("useHydra", "Use Ravenous Hydra", true)
   SkarnerMenu.Combo:Boolean("useTitanic", "Use Titanic Hydra", true)
--- Harass Menu
-  --SoonTM
---Q
-    
---W
-  
---E
-  
--- KillSteal Menu
-  --SoonTM
 
 OnTick(function()
 
