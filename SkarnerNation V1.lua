@@ -16,6 +16,8 @@ local SkarnerMenu = Menu("SkarnerNation", "SkarnerNation")
   SkarnerMenu.Combo:Boolean("useTiamat", "Use Tiamat", true)
   SkarnerMenu.Combo:Boolean("useHydra", "Use Ravenous Hydra", true)
   SkarnerMenu.Combo:Boolean("useTitanic", "Use Titanic Hydra", true)
+  SkarnerMenu.Combo:Boolean("useBOTRK", "Use BladeOfTheRuinedKing", true)
+  SkarnerMenu.Combo:Boolean("useYoum", "Use Youmuu's Ghostblade", true)
 
 OnTick(function()
 
@@ -53,6 +55,12 @@ OnTick(function()
     if GetItemSlot(myHero, 3748) > 0 and IsReady(GetItemSlot(myHero, 3748)) and SkarnerMenu.Combo.useTitanic:Value() then
        CastSpell(GetItemSlot(myHero, 3748))
       end 
+    if GetItemSlot(myHero, 3153) > 0 and IsReady(GetItemSlot(myHero, 3153)) and JaxMenu.Combo.useBOTRK:Value() then
+       CastTargetSpell(target, GetItemSlot(myHero, 3153))
+      end
+    if GetItemSlot(myHero, 3142) > 0 and IsReady(GetItemSlot(myHero, 3142)) and JaxMenu.Combo.useYoum:Value() then
+       CastSpell(GetItemSlot(myHero, 3142))
+      end    
     end
 end)
   
